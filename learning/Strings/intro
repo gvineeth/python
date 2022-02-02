@@ -1,0 +1,16 @@
+print("Hello I'am")  #To use '' inside, use "" outside
+
+print('"Good" news') #To use "" inside, use '' outside
+
+print('Hello I\'am', "\"Good\" news") #To use '' inside, use \
+
+print('First line.\nSecond line.') # \n for new line
+
+print(r'C:\some\name') # r for raw string
+
+print("""
+multiple
+lines
+""") # '''...''' or """...""" for multiple lines
+
+print('hi '+"I'am "*2) # + to concatinate, * to repeat
