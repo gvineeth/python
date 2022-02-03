@@ -14,3 +14,13 @@ lines
 """) # '''...''' or """...""" for multiple lines
 
 print('hi '+"I'am "*2) # + to concatinate, * to repeat
+
+word='python'
+print(word[3]) # h
+print(word[-1]) # n
+print(word[0:2]) # py
+print(word[3:]) # hon
+print(word[:3]) # pyt
+print(word[-2:]) # on
+print(word[4:40]) # on
+
