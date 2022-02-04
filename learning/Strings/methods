@@ -1,0 +1,166 @@
+word='python'
+print(word.capitalize()) # Python
+print(word.casefold()) # python
+
+print(word.center(10,'a')) # aapythonaa
+# str.center(width[, fillchar])
+
+# str.count(sub[, start[, end]])
+print('python is simple'.count('p')) # 2
+print('python is simple'.count('p',1)) # 1
+print('python is simple'.count('p',1,3)) # 0
+print('python is simple python'.count('python')) # 2
+
+# str.endswith(suffix[, start[, end]])
+print('python is simple python'.endswith('python')) # True
+print('python is simple python'.endswith('python',5)) # True
+print('python is simple python'.endswith('python',5,7)) # False
+
+# str.expandtabs(tabsize=8)
+print('01\t012\t0123\t01234'.expandtabs(4)) # '01  012 0123    01234'
+print('01\t012\t0123\t01234'.expandtabs()) # '01      012     0123    01234'
+
+# str.find(sub[, start[, end]])
+print('python is simple python'.find('python')) # 0
+print('python is simple python'.find('i')) # 7
+print('python is simple python'.find('in')) # -1
+
+# str.format(*args, **kwargs)
+print("This article is written in {}".format("Python")) # This article is written in Python
+print("Hi ! My name is {} and I am {} years old".format("User", 19)) # Hi! My name is User and I am 19 years old
+print("{0} love {1}!!".format("I","python")) # I love python!!
+print("{1} love {0}!!".format("me","python")) # python love me!!
+print("{1} love {0} {k}".format("me","python",k="so much")) # python love me so much
+print("%10s" % ('python', )) #     python
+print("%-10s" % ('python', )) # python
+print("%.5s" % ('python', )) # pytho
+print("%d rupees" % (1000, )) # 1000 rupees
+
+Some another useful Type Specifying 
+%u unsigned decimal integer
+%o octal integer
+f – floating point display
+b – binary
+o – octal
+%x – hexadecimal with lowercase letters after 9
+%X– hexadecimal with uppercase letters after 9
+e – exponent notation
+
+print("python is {:f}% good".format(100)) # python is 100.000000% good
+print("python is {:.3f}% good".format(100)) # python is 100.000% good
+print("python is {:.0f}% good".format(100)) # python is 100% good
+print("The {0} of 10 is {1:b}".format("binary", 10)) # The binary of 10 is 1010
+print("The {0} of 10 is {1:o}".format("octal", 10)) # The octal of 10 is 12
+print("{:10} is {:5}%".format("python", "100")) # python     is 100  %
+print("python is {:5}%".format(100)) # python is   100%
+print("{:10} is {:5}%".format("python", 100)) # python     is   100%
+print("{:*^20s}".format("python")) # *******python*******
+
+for i in range(3, 10):
+    print("{:6d} {:6d}".format(i, i ** 2))
+/*
+
+     3      9
+     4     16
+     5     25
+     6     36
+     7     49
+     8     64
+     9     81
+
+*/
+
+introduction = 'My name is {first_name}, I am a {language}.'
+intro = {
+	'first_name': 'python',
+	'language': 'program',
+}
+print(introduction.format(**intro)) # My name is python, I am a program.
+
+
+# str.index(sub[, start[, end]])
+print("python is powerfull".index('py')) # 0
+
+# str.isalnum()
+print("pythonis100".isalnum()) # True
+print("python is 100".isalnum()) # False
+print("pythonis100%".isalnum()) # False
+
+# str.isalpha()
+print("python".isalpha()) # True
+print("python3".isalpha()) # False
+print("python 3".isalpha()) # False
+
+# str.isascii()
+print("".isascii()) # keyboard inputs - True
+
+# str.isdecimal()
+print("1000".isdecimal()) # True
+print("1000%".isdecimal()) # False
+print("100.0".isdecimal()) # False
+print("python3".isdecimal()) # False
+
+# str.isdigit()
+print('²3455'.isdigit()) # True
+print("1000".isdigit()) # True
+print("1000%".isdigit()) # False
+print("100.0".isdigit()) # False
+print("python3".isdigit()) # False
+
+# str.isidentifier()
+print("1000rupees".isidentifier()) # False
+print("python".isidentifier()) # True
+print("python3".isidentifier()) # True
+print("python 3".isidentifier()) # False
+print("".isidentifier()) # False
+
+# str.islower()
+print("python".islower()) # True
+print("python3".islower()) # True
+print("python 3".islower()) # True
+print("python%".islower()) # True
+print("Python".islower()) # False
+
+# str.isnumeric()
+print('²3455'.isnumeric()) # True
+print("1000".isnumeric()) # True
+print("1000%".isnumeric()) # False
+print("100.0".isnumeric()) # False
+print("python3".isnumeric()) # False
+
+# str.isprintable()
+print('²3455'.isprintable()) # True
+print("1000".isprintable()) # True
+print("1000%".isprintable()) # True
+print("1000".isprintable()) # True
+print("python\n3".isprintable()) # False
+
+# str.isspace()
+‘ ‘ – Space
+‘\t’ – Horizontal tab
+‘\n’ – Newline
+‘\v’ – Vertical tab
+‘\f’ – Feed
+‘\r’ – Carriage return
+
+print(''.isspace()) # False
+print(' '.isspace()) # True
+print(' \n'.isspace()) # True
+print(' \t'.isspace()) # True
+
+# str.istitle()
+print('Python'.istitle()) # True
+print('Python Is Powerfull'.istitle()) # True
+print('Python Is POWERFULL'.istitle()) # False
+print('Python is simple'.istitle()) # False
+
+# str.isupper()
+print('PYTHON'.isupper()) # True
+print('Python'.isupper()) # False
+print('PYTHON is Powerfull'.isupper()) # False
+print('PYTHON3'.isupper()) # True
+print('PYTHON POWER'.isupper()) # True
+
+# 
+
+
