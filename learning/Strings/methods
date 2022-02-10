@@ -161,6 +161,109 @@ print('PYTHON is Powerfull'.isupper()) # False
 print('PYTHON3'.isupper()) # True
 print('PYTHON POWER'.isupper()) # True
 
-# 
+# str.join(iterable)
+# List, Tuple, String, Dictionary, and Set are iterable
+print('-'.join(['1','2','3'])) # 1-2-3
+print(''.join(['p','y','t','h','o','n'])) # python
+print('-'.join('python')) # p-y-t-h-o-n
 
+# str.ljust(width[, fillchar])
+print('python'.ljust(10, '0')) # python0000
 
+# str.lower()
+print("Python3".lower()) # python3
+
+# str.lstrip([chars])
+print("   Python3".lstrip()) # Python3
+print("pp-powerfull python".lstrip('p-')) # owerfull python
+print('www.example.com'.lstrip('cmowz.')) # example.com
+print('Arthur: three!'.lstrip('Arthur: ')) # ee!
+
+# str.maketrans(x[, y[, z]])
+txt = "python3"
+trans=(txt.maketrans('3','2'))
+trans2 = txt.maketrans('np3','sP2')
+trans3 = txt.maketrans('np3','sP2','hy')
+print(txt.translate(trans)) # python2
+print(txt.translate(trans2)) # Pythos2
+print(txt.translate(trans3)) # Ptos2
+
+# str.partition(sep)
+print("python3".partition('ho')) # ('pyt', 'ho', 'n3')
+print("python is powerfull".partition('is')) # ('python ', 'is', ' powerfull')
+print("python is robust".partition('the')) # ('python is robust', '', '')
+print("python is powerfull, isn't it?".partition('is')) # ('python ', 'is', " powerfull, isn't it?")
+
+# str.removeprefix(prefix, /) *** New in 3.9 ***
+print("python3".removeprefix('py')) # thon3
+print("python3".removeprefix('th')) # python3
+
+# str.removesuffix(suffix, /) *** New in 3.9 ***
+print("python3".removesuffix('n3')) # pytho
+print("python3".removesuffix('th')) # python3
+
+# str.replace(old, new[, count])
+print("python3 and python2".replace('py','PY')) # PYthon3 and PYthon2
+print("python, python3 and python2".replace('py','PY',2)) # PYthon, PYthon3 and python2
+
+# str.rfind(sub[, start[, end]])
+print("python3 and python2".rfind('py')) # 12
+print("python3 and python2".rfind('py',2,5)) # -1
+
+# str.rindex(sub[, start[, end]])
+print("python3 and python2".rindex('py')) # 12
+print("python3 and python2".rindex('py',2,5)) # error - not found
+
+# str.rjust(width[, fillchar])
+print("python3".rjust(10,'0')) # 000python3
+print("python3".rjust(3,'0')) # python3
+
+# str.rpartition(sep)
+print("python3 and python2".rpartition('py')) # ('python3 and ', 'py', 'thon2')
+print("python3 and python2".rpartition('the')) # ('', '', 'python3 and python2')
+
+# str.rsplit(sep=None, maxsplit=- 1)
+print("python3 and python2".rsplit()) # ['python3', 'and', 'python2']
+print("python3 and python2".rsplit('p',1)) # ['python3 and ', 'ython2']
+print("@@@python3 and python2".rsplit('@',2)) # ['@', '', 'python3 and python2']
+
+# str.rstrip([chars])
+print('  python3   '.rstrip()) #   python3
+print('  python3'.rstrip('nu3')) #   pytho
+
+# str.split(sep=None, maxsplit=- 1)
+print("python3 and python2".split())
+print("python3 and python2".split('p',1))
+print("@@@python3 and python2".split('@',2))
+
+# str.splitlines(keepends=False)
+print('ab c\n\nde fg\rkl\r\n'.splitlines()) # ['ab c', '', 'de fg', 'kl']
+print('ab c\n\nde fg\rkl\r\n'.splitlines(keepends=True)) # ['ab c\n', '\n', 'de fg\r', 'kl\r\n']
+print(''.splitlines()) # []
+
+# str.startswith(prefix[, start[, end]])
+print("python3 and python2".startswith('py')) # True
+print("python3 and python2".startswith('py',12)) # True
+print("@@@python3 and python2".startswith('py',2,5)) # False
+
+# str.strip([chars])
+print('  python3   '.strip()) # python3
+print('  python3'.strip('nu3 yp')) # tho
+
+# str.swapcase()
+print("python3 and python2".swapcase()) # PYTHON3 AND PYTHON2
+print("PYTHON3 AND PYTHON2".swapcase()) # python3 and python2
+
+# str.title()
+print("python3 and python2".title()) # Python3 And Python2
+print("PYTHON3 AND PYTHON2".title()) # Python3 And Python2
+
+# str.upper()
+print("python3 and python2".upper()) # PYTHON3 AND PYTHON2
+print("PYTHON3 AND PYTHON2".upper()) # PYTHON3 AND PYTHON2
+
+# str.zfill(width)
+print("python3".zfill(10)) # 000python3
+print("-python3".zfill(10)) # -00python3
+print("+python3".zfill(10)) # +00python3
+print("*python3".zfill(10)) # 00*python3
