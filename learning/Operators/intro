@@ -1,6 +1,87 @@
 Arithmetic operators
+
+a = 1
+b = 2
+
+add = a + b
+sub = a - b
+mul = a * b
+div1 = a / b
+div2 = a // b
+mod = a % b
+p = a ** b
+print(add) # 3
+print(sub) # -1
+print(mul) # 2
+print(div1) # 0.5
+print(div2) # 0
+print(mod) # 1
+print(p) # 1
+
+
+
 Assignment operators
+
+a = 1
+
+b = a
+print(b) # 1
+
+b += a
+print(b) # 2
+
+b -= a
+print(b) # 1
+
+b *= a
+print(b) # 1
+
+b /= a
+print(b) # 1.0
+
+b //= a
+print(b) # 1.0
+
+b %= a
+print(b) # 0.0
+
+b **= a
+print(b) # 0.0
+
+a=True
+b=True
+b &= a
+print(b) # True
+
+b |= a
+print(b) # True
+
+b ^= a
+print(b) # False
+
+a=2
+b=3
+b <<= a
+print(b) # 12
+
+b >>= a
+print(b) # 3
+
+
+
 Comparison operators
+
+a = 1
+b = 2
+print(a < b)  # True
+print(a != b) # True
+print(a <= b) # True
+print(a > b)  # False
+print(a == b) # False
+print(a >= b) # False
+
+
+
 Logical operators
 Identity operators
 Membership operators
