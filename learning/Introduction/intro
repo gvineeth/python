@@ -58,6 +58,10 @@ a=1
 b=5
 print(f'Results of the {a} and {b}')
 
+a='python'
+print(f'powerfull {a}')
+print(f'powerfull {a!r}') #'python' # repr 
+
 l=[1,2,3,4,5,6]
 print(l,*l) # [1, 2, 3, 4, 5, 6] 1 2 3 4 5 6
 
