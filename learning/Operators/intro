@@ -83,6 +83,68 @@ print(a >= b) # False
 
 
 Logical operators
+
+a = True
+b = False
+print(a and b, a & b) # False False
+print(a or b, a | b)  # True True
+print(not a)          # False
+
+
+
 Identity operators
+
+a = 10
+b = 20
+d=10.0
+c = a
+
+print(a is not b) # True
+print(a is d)     # False
+print(a is c)     # True
+
+
+
 Membership operators
+
+a = [10,20]
+print(10 in a)       # True
+print(1000 in a)     # False
+print(2000 not in a) # True
+
+
+
 Bitwise operators
+
+a = 10
+b = 4
+
+print(a & b)  # 0
+print(a | b)  # 14
+print(~a)     # -11
+print(a ^ b)  # 14
+print(a >> 2) # 2
+print(a << 2) # 40
+
+
+
+Operator		  Associativity
+( )	        	left-to-right
+**	         	right-to-left
+*  /  %	    	left-to-right
++  –	      	left-to-right
+<<  >>	      left-to-right
+<  <= 
+>  >=	      	left-to-right
+==  !=	      left-to-right
+is,  is not
+in, not in    left-to-right
+&, ^, |       left-to-right
+not	        	right-to-left
+and, or     	left-to-right
+= 
++=  -= 
+*=  /= 
+%=  &= 
+^=  |= 
+<<=  >>=	  	right-to-left
