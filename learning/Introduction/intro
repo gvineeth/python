@@ -54,6 +54,10 @@ print('python3',1,True,sep='-',end=";")
 print('python3',1,True)
 >>>python3-1-True;python3 1 True
 
+a=1
+b=5
+print(f'Results of the {a} and {b}')
+
 l=[1,2,3,4,5,6]
 print(l,*l) # [1, 2, 3, 4, 5, 6] 1 2 3 4 5 6
 
