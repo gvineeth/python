@@ -1,0 +1,32 @@
+a = 1
+b = 2
+
+# Addition of numbers
+add = a + b
+
+# Subtraction of numbers
+sub = a - b
+
+# Multiplication of number
+mul = a * b
+
+# Division(float) of number
+div1 = a / b
+
+# Division(floor) of number
+div2 = a // b
+
+# Modulo of both number
+mod = a % b
+
+# Power
+p = a ** b
+
+# print results
+print(add) # 3
+print(sub) # -1
+print(mul) # 2
+print(div1) # 0.5
+print(div2) # 0
+print(mod) # 1
+print(p) # 1
