@@ -23,4 +23,5 @@ print(word[3:]) # hon
 print(word[:3]) # pyt
 print(word[-2:]) # on
 print(word[4:40]) # on
-
+print(word[:]) # python
+print(word[::-1]) # nohtyp
