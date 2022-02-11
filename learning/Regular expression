@@ -1,0 +1,52 @@
+import re
+exp=re.search('th','python')
+print(exp.start(),exp.end()) # 2 4
+
+
+\	  Used to drop the special meaning of character following it
+[]	Represent a character class
+^	  Matches the beginning
+$	  Matches the end
+.	  Matches any character except newline
+|	  Means OR (Matches with any of the characters separated by it.
+?	  Matches zero or one occurrence
+*	  Any number of occurrences (including 0 occurrences)
++	  One or more occurrences
+{}	Indicate the number of occurrences of a preceding regex to match.
+()	Enclose a group of Regex
+
+
+print(re.search('.','python3.9')) # <re.Match object; span=(0, 1), match='p'>
+print(re.search('\.','python3.9')) # <re.Match object; span=(7, 8), match='.'>
+
+print(re.findall('[0,3]','pythom39')) # ['3']
+
+print(re.findall('[^0,3]','pythom39')) # ['p', 'y', 't', 'h', 'o', 'm', '9'] #except
+
+print(re.findall('^py','pythom3.9 and python2')) # ['py'] # start of string
+
+print(re.findall('^hpy','pythom3.9 and python2')) # []
+
+print(re.findall('2$','pythom3.9 and python2')) # ['2'] # end of string
+
+print(re.findall('9$','pythom3.9 and python2')) # []
+
+print(re.findall('..3','\npython3.9 and python2')) # ['on3']
+
+print(re.findall('..3|.2','\npython3.9 and python2')) # ['on3', 'n2']
+
+
+
+Special Sequence
+\A	Matches if the string begins with the given character
+\b	Matches if the word begins or ends with the given character. \b(string) will check for the beginning of the word and (string)\b will check for the ending of the word.
+\B	It is the opposite of the \b i.e. the string should not start or end with the given regex.
+\d	Matches any decimal digit, this is equivalent to the set class [0-9]
+\D	Matches any non-digit character, this is equivalent to the set class [^0-9]
+\s	Matches any whitespace character.	
+\S	Matches any non-whitespace character
+\w	Matches any alphanumeric character, this is equivalent to the class [a-zA-Z0-9_].
+\W	Matches any non-alphanumeric character.
+\Z	Matches if the string ends with the given regex	
+
+
