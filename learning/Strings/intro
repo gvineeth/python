@@ -25,3 +25,4 @@ print(word[-2:]) # on
 print(word[4:40]) # on
 print(word[:]) # python
 print(word[::-1]) # nohtyp
+print(word+'3') # python3
