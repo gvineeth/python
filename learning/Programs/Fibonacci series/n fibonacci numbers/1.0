@@ -1,0 +1,11 @@
+import re
+
+def fibonacci(n):
+	s ='0 1 '
+	for i in range(2, n+1):
+		s+=str(sum(list(map(int,re.findall('\d+\s',s)))))+' '
+		s=s.replace(' ',',',1)
+	s=s.replace(' ',',',1)
+	return s
+	
+print(fibonacci(9))
