@@ -148,3 +148,32 @@ and, or     	left-to-right
 %=  &= 
 ^=  |= 
 <<=  >>=	  	right-to-left
+
+
+
+
+Ternary operator:
+
+print(10 if 10<20 else 20)  # 10
+print( (20, 10) [10 < 20] ) # 10
+
+Division operator:
+
+print (5//2)    # 2
+print (-5//2)   # -3
+print (5.0//2)  # 2.0
+print (-5.0//2) # -3.0
+
+
+Any operator:
+
+print (any([False, False, False, False])) # False
+print (any([False, True, False, False]))  # True
+
+
+All operator:
+
+print (all([True, True, True, True])) # True
+print (all([True, True, False, True])) # False
+
+
